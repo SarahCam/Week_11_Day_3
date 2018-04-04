@@ -36,12 +36,18 @@ var arrayTasks = {
 				newArr.push(element);
 			}
 	 	}
-		return newArr.sort();
+		return newArr.reverse();
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		let newArr = [];
+		for(let element of arr){
+			if (element !== valueToRemove){
+				newArr.push(element);
+			}
+		}
+		return newArr;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
