@@ -20,7 +20,7 @@ var arrayTasks = {
 		return newArr;
 	},
 
-	sum: function (arr) {
+	sum: function (arr) {								// could use REDUCE
 		total = 0;
 		for(let element of arr){
 			total += element;
@@ -39,7 +39,7 @@ var arrayTasks = {
 		return newArr.reverse();
 	},
 
-	removeAndClone: function (arr, valueToRemove) {
+	removeAndClone: function (arr, valueToRemove) {				// FILTER
 		let newArr = [];
 		for(let element of arr){
 			if (element !== valueToRemove){
@@ -49,7 +49,7 @@ var arrayTasks = {
 		return newArr;
 	},
 
-	findIndexesOf: function (arr, itemToFind) {
+	findIndexesOf: function (arr, itemToFind) {					// FOREACH
 		let newArr = [];
 		for(let element of arr){
 			if (element === itemToFind){
@@ -61,7 +61,7 @@ var arrayTasks = {
 		return newArr;
 	},
 
-	sumOfAllEvenNumbersSquared: function (arr) {
+	sumOfAllEvenNumbersSquared: function (arr) {				// REDUCE
 		let result = 0;
 		for(let element of arr){
 			if(element%2 === 0){
